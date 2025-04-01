@@ -35,8 +35,13 @@ cd flask-mysql-docker
 
 ### 2. Build and Run Containers
 ```bash
-docker-compose up --build
+docker-compose up --build (incase it is not work use this below
+docker compose up -d
+
 ```
+### To list the containers
+docker compose ps
+
 
 ### 3. Access the Application
 - The Flask app runs on **http://localhost:5000**.
@@ -48,7 +53,7 @@ docker-compose up --build
 ### 4. Stopping the Containers
 To stop the running containers:
 ```bash
-docker-compose down
+docker compose down
 ```
 
 ## Explanation of Files
